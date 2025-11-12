@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Auto-scroll",
+  "version": "1.6",
+  "description": "Automatically scrolls down pages with smooth pauses.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "ye.png"
+  }
+}
