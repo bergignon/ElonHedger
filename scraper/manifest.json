@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Tweet Scraper",
-  "version": "3.0",
+  "version": "1.8",
   "description": "Scrapes public tweets from the X/Twitter web UI (educational/demo).",
   "permissions": [
     "storage",

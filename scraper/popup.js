@@ -6,7 +6,7 @@ const resetBtn = document.getElementById('reset');
 function renderTable(data) {
   tableBody.innerHTML = '';
   let totalAll = 0;
-  const sortedDates = Object.keys(data).sort();
+  const sortedDates = Object.keys(data).sort().reverse(); // Show most recent first
   for (const date of sortedDates) {
     const count = data[date];
     const row = document.createElement('tr');
@@ -14,7 +14,7 @@ function renderTable(data) {
     tableBody.appendChild(row);
     totalAll += count;
   }
-  summary.textContent = `Total tweets (all types): ${totalAll}`;
+  summary.textContent = `Total tweets: ${totalAll}`;
 }
 
 chrome.runtime.sendMessage({ type: 'getTotals' }, res => {
